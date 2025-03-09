@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>改进的加法计算器</title>
+</head>
+<body>
+    <!-- 输入框和按钮 -->
+    <input type="text" id="num1" placeholder="请输入第一个数字">
+    <input type="text" id="num2" placeholder="请输入第二个数字">
+    <button onclick="calculateSum()">计算总和</button>
+
+    <script>
+        // 改进后的计算函数，包括输入验证
+        function calculateSum() {
+            // 获取输入框的值
+            let num1 = document.getElementById('num1').value;
+            let num2 = document.getElementById('num2').value;
+
+            // 将字符串转换为浮点数
+            num1 = parseFloat(num1);
+            num2 = parseFloat(num2);
+
+            // 检查输入是否为有效数字
+            if (isNaN(num1) || isNaN(num2)) {
+                console.error("请输入有效的数字");
+                return; // 如果输入无效，停止函数执行
+            }
+
+            // 计算两数之和，并使用alert显示结果
+            let sum = num1 + num2;
+            alert("两数之和为: " + sum);
+        }
+    </script>
+</body>
+</html>
