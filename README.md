@@ -6,10 +6,10 @@
 
 基本路线是：
 
-1. 前段三件套（html && CSS && JavaScript）
-2. Vue
-3. Axios
-4. Node.js + Mongo
+1. 前段三件套（`html` && `CSS` && `JavaScript`）
+2. `Vue`
+3. `Axios`
+4. `Node.js` + `Mongo`
 
    
 部分是关于git版本控制初次调试的文档
